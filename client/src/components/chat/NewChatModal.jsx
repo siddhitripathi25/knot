@@ -39,7 +39,12 @@ export default function NewChatModal({
 
     try {
       const response = await userApi.searchUsers(trimmedQuery);
-      setSearchResults(response || []);
+      const userList = Array.isArray(response)
+        ? response
+        : Array.isArray(response?.users)
+        ? response.users
+        : [];
+      setSearchResults(userList);
     } catch (err) {
       setError(
         err.response?.data?.message ||

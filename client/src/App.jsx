@@ -17,17 +17,17 @@ const DEMO_USERS = [
   {
     id: "a0000000-0000-0000-0000-000000000001",
     username: "alice",
-    displayName: "Alice Adams"
+    displayName: "Siddhi"
   },
   {
     id: "b0000000-0000-0000-0000-000000000002",
     username: "bob",
-    displayName: "Bob Baker"
+    displayName: "Anu"
   },
   {
     id: "c0000000-0000-0000-0000-000000000003",
     username: "charlie",
-    displayName: "Charlie Clark"
+    displayName: "Neelam"
   }
 ];
 

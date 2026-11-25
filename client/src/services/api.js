@@ -36,7 +36,7 @@ export const userApi = {
       params: { q: query }
     });
 
-    return res.data;
+    return res.data?.users || res.data || [];
   }
 };
 

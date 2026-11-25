@@ -199,6 +199,7 @@ function registerMessagingHandlers(io, socket) {
     }
 
     const trimmedConvId = conversationId.trim();
+    const trimmedContent = content.trim();
 
     if (!isValidUUID(trimmedConvId)) {
       const errorResponse = {
